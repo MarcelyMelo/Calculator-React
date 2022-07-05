@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #eee;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: #1F1F1F;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  border-radius: 1rem;
+}
+.wrapper .screen {
+  align-self: flex-end;
+  padding: 2rem;
+}
+.wrapper .screen span {
+  font-size: 0.9rem;
+  color: rgb(121, 121, 121);
+}
+.wrapper .operators button, .wrapper .digits button {
+  width: 33%;
+  height: 70px;
+  border: none;
+  transition: 0.3s;
+}
+.wrapper .operators button:hover, .wrapper .digits button:hover {
+  filter: brightness(70%);
+}
+.wrapper .operators {
+  display: flex;
+}
+.wrapper .operators button {
+  background-color: #359eb8;
+}
+.wrapper .digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .digits button {
+  background-color: #1F1F1F;
+  border-radius: 1rem;
+}/*# sourceMappingURL=style.css.map */

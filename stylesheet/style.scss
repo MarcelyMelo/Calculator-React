@@ -1,0 +1,64 @@
+$clr-blue: #359eb8;
+$clr-dark: #1F1F1F;
+$clr-light: #eee;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: $clr-light;
+}
+
+
+.app{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    background-color: $clr-dark;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 1rem;
+    .screen{
+        align-self: flex-end;
+        padding: 2rem;
+        span{
+            font-size: .9rem;
+            color: rgb(121, 121, 121);
+        }
+    }
+    .operators button, .digits button{
+        width: 33%;
+        height: 70px;
+        border: none;
+        transition: .3s;
+    }
+    .operators button:hover, .digits button:hover{
+        filter: brightness(70%);
+    }
+    
+    .operators{
+        display: flex;
+        button{
+            background-color: $clr-blue;
+        }
+    }
+
+    .digits{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .digits button{
+        background-color: $clr-dark;
+        border-radius: 1rem;
+    }
+    
+}
